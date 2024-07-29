@@ -65,6 +65,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
   onDelete,
   onSelect,
   onExpanderClick,
+  startDate: propStartDate,
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const taskListRef = useRef<HTMLDivElement>(null);
@@ -397,6 +398,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
     rtl,
   };
   const calendarProps: CalendarProps = {
+    startDate: propStartDate,
     dateSetup,
     locale,
     viewMode,

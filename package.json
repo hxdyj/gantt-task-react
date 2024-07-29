@@ -24,6 +24,7 @@
     "task"
   ],
   "scripts": {
+    "dev": "vite --mode dev --force",
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
@@ -46,6 +47,7 @@
     "@types/node": "^15.0.1",
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.5",
+    "@vitejs/plugin-react": "^4.3.1",
     "cross-env": "^7.0.3",
     "gh-pages": "^3.1.0",
     "microbundle-crl": "^0.13.11",
@@ -58,10 +60,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vite": "^5.3.5"
   },
   "files": [
     "dist",
     "src"
-  ]
+  ],
+  "dependencies": {
+    "dayjs": "^1.11.12"
+  }
 }

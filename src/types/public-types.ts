@@ -1,3 +1,5 @@
+import { CalendarProps } from "../components/calendar/calendar";
+
 export enum ViewMode {
   Hour = "Hour",
   QuarterDay = "Quarter Day",
@@ -140,6 +142,6 @@ export interface StylingOption {
   }>;
 }
 
-export interface GanttProps extends EventOption, DisplayOption, StylingOption {
+export interface GanttProps extends EventOption, DisplayOption, StylingOption, Pick<CalendarProps, 'startDate'> {
   tasks: Task[];
 }
