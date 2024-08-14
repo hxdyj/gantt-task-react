@@ -329,12 +329,12 @@ export const Calendar: React.FC<CalendarProps> = ({
       bottomValues.push(
         <text
           key={date.getTime()}
-          y={headerHeight * 0.8}
+          y={headerHeight * 0.6}
           x={columnWidth * (i + +rtl)}
           className={styles.calendarBottomText}
           fontFamily={fontFamily}
         >
-          {diff < 0 ? '' : `${diff}t`}
+          {diff < 0 ? '' : `${diff}T`}
         </text>
       );
       // if (i !== 0 && date.getDate() !== dates[i - 1].getDate()) {

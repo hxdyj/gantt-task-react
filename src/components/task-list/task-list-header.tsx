@@ -19,17 +19,21 @@ export const TaskListHeaderDefault: React.FC<{
         className={styles.ganttTable_Header}
         style={{
           height: headerHeight - 2,
+          display: "flex",
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
             minWidth: rowWidth,
+            textAlign: 'center'
           }}
         >
-          &nbsp;Name
+          Name
         </div>
-        <div
+        {/* <div
           className={styles.ganttTable_HeaderSeparator}
           style={{
             height: headerHeight * 0.5,
@@ -58,7 +62,7 @@ export const TaskListHeaderDefault: React.FC<{
           }}
         >
           &nbsp;To
-        </div>
+        </div> */}
       </div>
     </div>
   );
