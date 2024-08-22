@@ -16,7 +16,7 @@ export function Base() {
   })
   return (
     <div className="page-Base">
-      <Gantt tasks={tasks} startDate={new Date(2020, 1, 1)} viewMode={
+      <Gantt tasks={tasks} startDate={new Date(2020, 1, 1)} TooltipContent={() => null} viewMode={
         ViewMode.Hour
       } />
     </div>
