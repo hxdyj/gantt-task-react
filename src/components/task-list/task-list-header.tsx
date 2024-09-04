@@ -31,7 +31,7 @@ export const TaskListHeaderDefault: React.FC<{
             textAlign: 'center'
           }}
         >
-          Name
+
         </div>
         {/* <div
           className={styles.ganttTable_HeaderSeparator}

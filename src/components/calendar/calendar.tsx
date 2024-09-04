@@ -326,6 +326,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         hour: "numeric",
       }).format(date);
       let diff = dayjs(date).diff(startDateObj, 'hour')
+      let diffMinute = dayjs(date).diff(startDateObj, 'minute')
       bottomValues.push(
         <text
           key={date.getTime()}
@@ -334,7 +335,7 @@ export const Calendar: React.FC<CalendarProps> = ({
           className={styles.calendarBottomText}
           fontFamily={fontFamily}
         >
-          {diff < 0 ? '' : `T${diff}`}
+          {diffMinute < 0 ? '' : `T${diff}`}
         </text>
       );
       // if (i !== 0 && date.getDate() !== dates[i - 1].getDate()) {
