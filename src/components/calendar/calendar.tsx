@@ -335,7 +335,7 @@ export const Calendar: React.FC<CalendarProps> = ({
           className={styles.calendarBottomText}
           fontFamily={fontFamily}
         >
-          {diffMinute < 0 ? '' : `T${diff}`}
+          {diffMinute < 0 ? '' : diff == 0 ? 'T' : `T+${diff}h`}
         </text>
       );
       // if (i !== 0 && date.getDate() !== dates[i - 1].getDate()) {
